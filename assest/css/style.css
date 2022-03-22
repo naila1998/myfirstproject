@@ -1,0 +1,221 @@
+/* public start */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+.contenier{
+  
+        width: 85%;
+        margin: auto;
+        background-color: #fff;
+}
+
+.capital{
+    text-transform: capitalize;
+}
+:root{
+    --praimary-color:#30e3ca;
+}
+body{
+    height: 100vh;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+
+/* public end */
+/* trending section */
+.trend-title{
+    margin-bottom:50px ;
+    margin-top: 50px;
+    position: relative;
+    color: var(--praimary-color);
+    margin-left: 20px;
+   
+}
+.trend-title::after{
+  
+        position: absolute;
+        content: "";
+        bottom:  -5px;
+        left: 0;
+        width: 80px;
+        height: 3px;
+        background: var(--praimary-color);
+    
+}
+
+.trendeing{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+   
+}
+.trendeing__items{
+    width: 47%;
+    display: flex;
+    box-shadow: 0 5px 20px  rgb(0 0 0 / 10%);
+    margin-bottom: 30px;
+    border-radius: 7px;
+    background: #fff;
+
+}
+
+.trendeing__items .items__img {
+  
+    width: 40%;
+    height: 100%;
+
+}
+.trendeing__items .items__img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+
+.trendeing__items .items__contant{
+    width: 60%;
+    height: 100%;
+    padding: 20px;
+    margin-left: 5px;
+   
+}
+.row2{
+    display: flex;
+    justify-content: space-between;
+  
+ 
+}
+.trendeing__items .items__contant span{
+    font-size: 13px;
+    display: inline-block;
+    padding: 10px 25px;
+    background: #e9ecef;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    color: #000;
+    font-weight: bold;
+  
+}
+ .items__contant .heart {
+   
+    color: var(--praimary-color);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.03);
+  padding: 7.3px ;
+  transition: all 1s;
+ 
+}
+.heart:hover{
+   color: #fff;
+   background: #f23a2e;
+   cursor: pointer;
+}
+.trendeing__items .items__contant a{
+    display: inline-block;
+    color: var(--praimary-color);
+    text-decoration: none;
+    margin-bottom: 15px;
+    transition: all 1s;
+}
+.trendeing__items .items__contant a:hover{
+    color: #18af9a;
+    cursor: pointer;
+}
+.trendeing__items .items__contant p{
+    margin-bottom: 15px;
+}
+.trendeing__items .items__contant .stars{
+   display: inline-block;
+}
+.trendeing__items .items__contant .stars i{
+color: #f89d13;
+}
+.trendeing__items .items__contant .stars i:nth-child(5){
+    color: #6c757d;
+}
+.trendeing__items .items__contant .stars p{
+    display: inline-block;
+}
+@media(max-width :576px){
+
+.trendeing__items{
+    width: 100%;
+    flex-direction: column;
+}
+.trendeing__items .items__img{
+    width: 100%;
+    height: 55%;
+}
+.trendeing__items .items__contant{
+    width: 100%;
+    height: 45%;
+}
+}
+/* end trending section */
+
+
+
+/*  start Testimonials section  */
+
+.testimonials__title{
+    margin-bottom:100px ;
+    margin-top: 100px;
+    position: relative;
+    color: var(--praimary-color);
+    margin-left: 20px;
+    
+   
+}
+.testimonials__title::after{
+        position: absolute;
+        content: "";
+        bottom:  -15px;
+        width: 80px;
+        height: 3px;
+        background: var(--praimary-color);
+        left: 0;
+      
+    
+}
+.testimonials{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    margin-bottom: 100px;
+
+}
+.testimonials .testimonials__items{
+    width: 22%;
+    box-shadow: 0 5px 20px  rgb(0 0 0 / 10%);
+    padding: 30px;
+    border-radius: 7px;
+}
+.testimonials .testimonials__items img{
+    width: 60%;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 1px solid #18af9a;
+   
+}
+
+.testimonials .testimonials__items .time{
+    margin-bottom: 30px;
+   color: var(--praimary-color);
+}
+.testimonials .testimonials__items .comment{
+   text-align: start;
+}
+@media(max-width :576px){
+
+
+}
+/* end testimonials section */

@@ -1,0 +1,254 @@
+/* public start */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: "Nanum Gothic",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,
+    "Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    line-height: 1.5;
+    background-color: #fff;
+}
+:root{
+    --praimary-color:#30e3ca ;
+    --secndry-color:#1cd1b7;
+}
+.contenier{
+    width: 75%;
+    margin: auto;
+}
+.contenier2{
+   
+        width: 50%;
+       margin: auto;
+}
+
+.capital{
+    text-transform: capitalize;
+}
+
+
+/* public end */
+
+/* contact section start */
+
+.contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 200px;
+   margin-bottom: 200px;
+}
+.contact__message{
+    width: 60%;
+    margin-right: 50px;
+}
+.contact__message .msg-form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background: rgba(0, 0, 0, 0.03);
+    padding: 35px 45px;
+}
+
+.contact__message .msg-form input{
+    display: block;
+    width: 100%;
+    padding: 10px 25px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.msg-form__textarea{
+    color: #495057;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    margin-bottom: 20px;
+    margin-top: 20px;  
+}
+
+.name{
+    display: flex;
+    justify-content: space-around;  
+  
+}
+.name .fname{
+    width: 50%;
+    margin-right: 20px;
+}
+.name .lname{
+    width: 50%;
+}
+.msg-form__btn{
+    background-color: var(--praimary-color);
+    border: var(--praimary-color);
+    padding: 15px 20px;
+    color: #fff;
+    width: 30%;
+    text-align: center;
+    font-size: 16px;
+    transition: all 1s;
+    
+}
+.msg-form__btn:hover{
+    background-color: var(--secndry-color);
+    border-color: var(--secndry-color);
+}
+.allinfo{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+
+}
+.allinfo .info{
+   width: 100%;
+   height: 40%;
+   padding: 1.5em;
+   background: rgba(0, 0, 0, 0.03);
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   margin-bottom: 20px;
+
+}
+ .address{
+
+    width: 80%;
+    color: #4d4d4d;
+    
+}
+.info__title{
+    font-weight: 700;
+}
+.allinfo .info a{
+    display: block;
+     color: var(--praimary-color);
+     text-decoration: none;
+     transition: all 1s;
+    
+}
+.info a:hover{
+    
+    color: var(--secndry-color);
+    cursor: pointer;
+
+}
+
+.allinfo .more-info{
+    width: 100%;
+    height: 40%;
+    padding: 1.5em;
+    background: rgba(0, 0, 0, 0.03);
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: flex-start;
+
+ }
+ .more-info p{
+     width: 100%;
+     color: #4d4d4d;
+ }
+ .more-info__btn{
+    background-color: var(--praimary-color);
+    border: 0;
+    text-align: center;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 16px;
+    transition: all 1s;
+ }
+ .more-info__btn:hover{
+    background-color: var(--secndry-color);
+    border-color: var(--secndry-color);
+ }
+/* contact section end */
+@media(max-width :576px){
+    .contact{
+        display: flex; 
+        flex-direction: column; 
+    }
+    
+    .name{
+         flex-direction: column;
+    }
+    .contact .message{
+        width: 100%;
+        flex-direction: column;
+    }
+    .contact .message input{
+        width: 200px;
+    }
+    .contact .message .btn{
+        width: 100%;
+    }
+    .contact .allinfo{
+        width: 100%;
+    }
+    .contact .more-info{
+        width: 100%;
+    }
+}
+
+/* section  question start */
+
+.question{
+    display: flex;
+    flex-direction: column;
+
+}
+.center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+.question h1{
+    color: var(--praimary-color);
+    font-size: 2rem;
+}
+.question p{
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.line{
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: var(--praimary-color);
+    margin-bottom: 25px;
+}
+.ask{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+ justify-content: center;
+}
+.ask a{
+    width: 100%;
+text-decoration: none;
+font-size: 20px;
+border: 1px solid #dee2e6;
+padding: 10px 20px;
+border-radius: 5px;
+color: #495057;
+margin-top: 5px;
+margin-bottom: 5px;
+transition: all 1s;
+text-align: left;
+}
+.ask a:hover{
+    
+    color: var(--secndry-color);
+    cursor: pointer;
+
+}
+
+/* section  question end */
